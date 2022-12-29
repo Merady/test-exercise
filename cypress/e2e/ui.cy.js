@@ -20,7 +20,7 @@ describe(' Basic UI tests', () => {
     // Confirm new URL contains relax gaming
   })
 
-  it.only('Visit suppliers, make a search and visit the first result', () => {
+  it('Visit suppliers, make a search and visit the first result', () => {
     cy.visit('/suppliers')
     //Visits baseUrl hub88.io
     cy.get('.input').type('One')
@@ -28,8 +28,9 @@ describe(' Basic UI tests', () => {
     cy.get('.supplier-card').first().click({force: true})
     // Get the first supplier card and click on it
     cy.url().should('include', 'OneTouch')
-    cy.contains('Steam Vault').click()
     // Confirm new URL contains relax gaming
+    cy.contains('Steam Vault').click()
+    //Find specific game called "Steam Vault" and open it
   })
 
 })
