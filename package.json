@@ -1,0 +1,22 @@
+{
+  "name": "test-exercise",
+  "version": "1.0.0",
+  "description": "basic ui and rest tests",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Merady/test-exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merady/test-exercise/issues"
+  },
+  "homepage": "https://github.com/Merady/test-exercise#readme",
+  "dependencies": {
+    "cypress": "^12.2.0"
+  }
+}
